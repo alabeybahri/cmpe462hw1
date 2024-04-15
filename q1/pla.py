@@ -47,10 +47,10 @@ class Perceptron:
 
 
 if __name__ == "__main__":
-    data_large = np.load("q1/PLA_data/data_large.npy")
-    label_large = np.load("q1/PLA_data/label_large.npy")
-    data_small = np.load("q1/PLA_data/data_small.npy")
-    label_small = np.load("q1/PLA_data/label_small.npy")
+    data_large = np.load("PLA_data/data_large.npy")
+    label_large = np.load("PLA_data/label_large.npy")
+    data_small = np.load("PLA_data/data_small.npy")
+    label_small = np.load("PLA_data/label_small.npy")
 
     perceptron_large = Perceptron(data_large, label_large)
     perceptron_large.fit()
@@ -60,7 +60,7 @@ if __name__ == "__main__":
     perceptron_small.fit()
     predictions_small = perceptron_small.predict()
     perceptron_small.plot_decision_boundary(title="Small Dataset")
-    print(perceptron_large.weights)
-    print(perceptron_small.weights)
-    print(perceptron_large.iterations)
-    print(perceptron_small.iterations)
+    # print(perceptron_large.weights)
+    # print(perceptron_small.weights)
+    # print(perceptron_large.iterations)
+    # print(perceptron_small.iterations)
